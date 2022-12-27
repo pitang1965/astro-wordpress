@@ -13,6 +13,7 @@ export async function getStaticPaths(){
 
 function resolveContentTemplate(node){ 
     let template;
+    console.log(node);
     switch(node.__typename){
         case 'Post':
             template = Single;
